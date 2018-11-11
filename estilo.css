@@ -1,0 +1,222 @@
+﻿:root {
+	--color-text: #f0f0f0;
+	--color-active: #dc1414;
+	--color-BackHeader: #1d1d1d;
+	--color-BackGround: #141414;
+}
+
+/*------------------------------*/
+.logo{
+	background: var(--color-BackHeader);
+}
+
+.menus{	
+	padding-bottom: 5px;
+	background: var(--color-BackHeader);
+	border-bottom: 2px solid #f0f0f0;
+}
+
+body{
+	margin: 0px;
+	background: var(--color-BackGround);
+
+	font-family: 'Roboto', sans-serif;
+	color: var(--color-text);
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	text-align: justify;
+}
+
+h1, h2, h3, h4, a{
+ 	font-family: 'Titillium Web', sans-serif;
+	color: var(--color-text);
+}
+
+
+/*-------------------- Cabeçalho -------------------*/
+header .logo{
+ 	font-family: 'Titillium Web', sans-serif;
+	padding-left: 5%;
+ 	font-size: 2rem;
+}
+
+/* aqui afeta a lista de menus */
+header ul{
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+header li {
+	display: inline;
+	margin-right: 25px;
+	margin-left: 25px;
+	font-size: 1.25rem;
+}
+
+header ul a{
+	transition: 0.3s ease;
+}
+
+header ul a:hover{
+	transition: 0.3s ease;
+	color: var(--color-active);
+}
+
+header ul #pagina-atual{
+	color: var(--color-active);
+}
+
+/*--------------------- ICONES -----------------------*/
+header .icones{
+    position: relative;
+	display: flex;
+
+    justify-content: flex-end;
+
+	padding-right: 5.7%;
+    top: -74px;
+}
+
+header .icones img{
+    width: 25px;
+	margin-right: -25px;
+	margin-left: 25px;
+}
+
+/*--------------------- Corpo -----------------------*/
+main{
+	margin: auto;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.flex-container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;	
+}
+
+
+/*---------- PAGINA HOME ----------*/
+
+.pagina-home{
+	text-align: center;
+	font-size: 1.30em;
+	
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pagina-home p{
+	text-align: center;
+}
+
+.pagina-home a{
+	padding: 5px 15px;
+
+	border: 5px solid var(--color-active);
+	border-radius: 4px;
+
+	color: var(--color-text);
+	background-color: var(--color-active);
+}
+
+
+/*---------- PAGINA PORTFOLIO ----------*/
+.flex-item {
+	position: relative;
+	width: 350px;
+	height: 100%;
+	margin: 0.5%;
+	text-align: center;
+}
+
+.flex-image {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+.flex-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: 0.5s ease;
+	border-radius: 10px;
+	background-color: var(--color-active);
+}
+
+.flex-text {
+	color: var(--color-text);
+	font-size: 1.20em;
+	position: absolute; 
+	left: 7.5%;
+	right: 7.5%;
+	transform: translate(0%, 20%);
+}
+
+.flex-item:hover .flex-overlay {
+  opacity: 0.85;
+}
+
+/*---------- PAGINA SOBRE ----------*/
+.flex-item-sobre {
+	position: relative;
+	width: 400px;
+	height: 100%;
+	text-align: center;
+}
+
+/*---------- PAGINA CONTATO ----------*/
+
+.flex-item-contato {
+	text-align: center;
+}
+
+.flex-item-contato label{
+	font-size: 1.0rem;
+}
+
+input, textarea{
+	width: 350px;
+    border-radius: 4px;
+}
+
+textarea{
+	height: 150px;
+}
+
+.flex-item-contato form {
+	margin: auto;
+	padding: 10px;
+	max-width: 400px;
+
+	background-color: var(--color-BackHeader);
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+}
+
+.flex-item-contato button {
+	padding: 5px 15px;
+	margin: 5px;
+
+	border: 5px solid var(--color-active);
+	border-radius: 4px;
+
+	font-size: 1.0rem;
+	color: var(--color-text);
+	background-color: var(--color-active);
+}
